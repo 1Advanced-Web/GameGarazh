@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GameGarazh</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style type="text/css">
+  #selected:visited{
+    background: blue;
+  }
+
+</style>
+<body>
+<div class="header">
+	<div id="navbar">
+    <a class="nava" href="index.html">Home</a>
+    <a class="nava" id="selected" href="games.html">Games</a>
+  <a class="nava" href="about.html">About Us</a>
+	<input type="text" id="search" placeholder="Search">
+	</div>	
+</div>
+
+<div class="content">
+	<a href="gtav.html"><img src="games icon/gta5icon.jpg" id="gta5"></a>
+  <a href="Control.html"><img src="games icon/controlicon.jpg" id="control"></a>
+  <a href="Mafia_3.html"><img src="games icon/mafia3icon.jpg" id="mafia3"></a>
+  <a href="Doom.html"><img src="games icon/doom4icon.jpg" id="doom4"></a>
+  <a href="Farcry4.html"><img src="games icon/farcry4icon.jpg" id="farcry4"></a>
+  <a href="Farcry5.html"><img src="games icon/farcry5icon.jpg" id="farcry5"></a>
+  <a href="-"><img src="games icon/mafia2icon.jpg" id="mafia2"></a>
+  <a href="watch_dogs.html"><img src="games icon/watchdogsicon.jpg" id="watchdogs"></a>
+  <a href="watch_dogs_2.html"><img src="games icon/watchdogs2icon.jpg" id="watchdogs2"></a>
+  <a href="assassins_creed.html"><img src="games icon/assasinsunity.png" id="assasinsunity"></a>
+  <a href="skyrim.html"><img src="games icon/skyrim.png" id="skyrim"></a>
+  <a href="red_redemption.html"><img src="games icon/rdr.png" id="rdr"></a>
+  <a href="CALL_OF_DUTY.html"><img src="games icon/kod kw.png" id="cod"></a>
+  <a href="for_honor1.html"><img src="games icon/forhonor.png" id="forhonor"></a>
+  
+
+
+
+
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+</script>
+</body>
+</html>
